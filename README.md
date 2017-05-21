@@ -39,7 +39,7 @@ Note: a "twig" refers to one row of the tree.  A twig has a handle that can be c
 - `indent`: size of one unit of indentation
 - `handleRadius`: only used for determining whether a click hits the handle - it should play well with your drawHandle function
 - `textMargin`: distance between handle center and twig text
-- `twigHeigh`t: vertical spacing between twigs
+- `twigHeight`: vertical spacing between twigs
 - `maxVisible`: number of twigs to display, if canvas size permits
 - `font`: font of twig text
 - `drawHandle`: `function(ctx: CanvasRenderingContext2D, tree: Tree, twig: Twig, cx: number, cy: number)` - custom drawing function to draw a twig handle, given the twig and its center coordinates as parameters (as well as the context and the tree)
