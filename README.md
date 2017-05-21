@@ -2,6 +2,10 @@
 
 A tree viewer for JSON data
 
+## Features
+
+Sweetgum renders to a canvas for speed, and can be controlled with the keyboard alone without using a mouse.
+
 ## Usage
 
     var ctx = document.getElementById('canvas').getContext('2d');
@@ -23,6 +27,20 @@ A tree viewer for JSON data
     
     var tree = new Sweetgum.Tree(ctx, data, options);
 
+## Options
+
+    Note: a "twig" refers to one row of the tree.  A twig has a handle that can be clicked to open/close the subtree, and a text that displays the key and value of the JSON data.
+    
+    top: the y-position of the center of the root handle
+    left: the x-position of the center of the root handle
+    indent: size of one unit of indentation
+    handleRadius: only used for determining whether a click hits the handle - it should play well with your drawHandle function
+    textMargin: distance between handle center and twig text
+    twigHeight: vertical spacing between twigs
+    maxVisible: number of twigs to display, if canvas size permits
+    font: font of twig text
+    drawHandle: function(ctx: CanvasRenderingContext2D, tree: Tree, twig: Twig, cx: number, cy: number) - custom drawing function to draw a twig handle, given the twig and its center coordinates as parameters (as well as the context and the tree)
+
 ## Controls
 
     Space = edit value
@@ -34,6 +52,8 @@ A tree viewer for JSON data
     Shift+Down = move cursor to next sibling
     Ctrl+Up = move cursor to parent
     Ctrl+Shift+Up = move cursor to root
+    
+    Click = select twig, and open or close branch
     
     Right = open, or move cursor to next
     Left = close, or move cursor to parent
@@ -48,9 +68,9 @@ A tree viewer for JSON data
     Ctrl+Shift+Alt+Right = open grandchildren and descendants
     Ctrl+Shift+Alt+Left = close grandchildren and descendants
     
-    Shift+Scroll = scroll by 1
+    Shift+Scroll = scroll by 1 twig
     Scroll = 10
     Ctrl+Scroll = 100
     Ctrl+Shift+Scroll = 1000
     Ctrl+Shift+Alt+Scroll = 10000
-    PageUp/PageDown equivalent to Scroll
+    PageUp/PageDown is equivalent to Scroll
