@@ -6,6 +6,10 @@ A tree viewer for JSON data
 
 Sweetgum renders to a canvas for speed, and can be controlled with the keyboard alone without using a mouse.
 
+## Demo
+
+[https://chmelynski.github.io/sweetgum/sweetgum.htm](https://chmelynski.github.io/sweetgum/sweetgum.htm)
+
 ## Usage
 
     // include a tabIndex so that the canvas can be focused
