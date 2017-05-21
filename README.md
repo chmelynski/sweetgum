@@ -29,17 +29,17 @@ Sweetgum renders to a canvas for speed, and can be controlled with the keyboard 
 
 ## Options
 
-    Note: a "twig" refers to one row of the tree.  A twig has a handle that can be clicked to open/close the subtree, and a text that displays the key and value of the JSON data.
+Note: a "twig" refers to one row of the tree.  A twig has a handle that can be clicked to open/close the subtree, and a text that displays the key and value of the relevant object/array element.
     
-    top: the y-position of the center of the root handle
-    left: the x-position of the center of the root handle
-    indent: size of one unit of indentation
-    handleRadius: only used for determining whether a click hits the handle - it should play well with your drawHandle function
-    textMargin: distance between handle center and twig text
-    twigHeight: vertical spacing between twigs
-    maxVisible: number of twigs to display, if canvas size permits
-    font: font of twig text
-    drawHandle: function(ctx: CanvasRenderingContext2D, tree: Tree, twig: Twig, cx: number, cy: number) - custom drawing function to draw a twig handle, given the twig and its center coordinates as parameters (as well as the context and the tree)
+- `top`: the y-position of the center of the root handle
+- `left`: the x-position of the center of the root handle
+- `indent`: size of one unit of indentation
+- `handleRadius`: only used for determining whether a click hits the handle - it should play well with your drawHandle function
+- `textMargin`: distance between handle center and twig text
+- `twigHeigh`t: vertical spacing between twigs
+- `maxVisible`: number of twigs to display, if canvas size permits
+- `font`: font of twig text
+- `drawHandle`: `function(ctx: CanvasRenderingContext2D, tree: Tree, twig: Twig, cx: number, cy: number)` - custom drawing function to draw a twig handle, given the twig and its center coordinates as parameters (as well as the context and the tree)
 
 ## Controls
 
