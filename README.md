@@ -8,8 +8,11 @@ Sweetgum renders to a canvas for speed, and can be controlled with the keyboard 
 
 ## Usage
 
+    // include a tabIndex so that the canvas can be focused
+    <canvas id="canvas" width="1000" height="500" tabIndex="1"></canvas>
+    
     var ctx = document.getElementById('canvas').getContext('2d');
-    ctx.canvas.focus();
+    ctx.canvas.focus(); // focus the canvas so that it can receive key events
     
     var data = {a:'foo',b:[{a:'foo'},'baz'],c:['bar','baz']};
     
@@ -22,7 +25,7 @@ Sweetgum renders to a canvas for speed, and can be controlled with the keyboard 
     	twigHeight: 15,
     	maxVisible: 30,
     	font: '10pt Courier New',
-    	drawHandle: null
+    	drawHandle: null // a suitable default drawHandle function is built in
     };
     
     var tree = new Sweetgum.Tree(ctx, data, options);
