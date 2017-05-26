@@ -75,6 +75,14 @@ Note: a "twig" refers to one row of the tree.  A twig has a handle that can be c
     Ctrl+Shift+Alt+Right = open grandchildren and descendants
     Ctrl+Shift+Alt+Left = close grandchildren and descendants
     
+    Alt+Up = add prev sibling
+    Alt+Down = add next sibling
+    Alt+Left = add object parent
+    Alt+Shift+Left = add array parent
+    Alt+Right = add first child
+    Shift+Alt+Up = switch selected with prev sibling
+    Shift+Alt+Down = switch selected with next sibling
+    
     Shift+Scroll = scroll by 1 twig
     Scroll = 10
     Ctrl+Scroll = 100
