@@ -82,6 +82,7 @@ Note: a "twig" refers to one row of the tree.  A twig has a handle that can be c
     Alt+Right = add first child
     Shift+Alt+Up = switch selected with prev sibling
     Shift+Alt+Down = switch selected with next sibling
+    Delete = delete selected
     
     Shift+Scroll = scroll by 1 twig
     Scroll = 10
