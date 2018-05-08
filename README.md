@@ -50,43 +50,39 @@ Note: a "twig" refers to one row of the tree.  A twig has a handle that can be c
 
 ## Controls
 
-    Space = edit value
-    Shift+Space = edit key
+    Space          edit value
+    Shift+Space    edit key
     
-    Up = move cursor up (in display order)
-    Down = move cursor down (in display order)
-    Shift+Up = move cursor to prev sibling
-    Shift+Down = move cursor to next sibling
-    Ctrl+Up = move cursor to parent
-    Ctrl+Shift+Up = move cursor to root
+    Up             move cursor up (in display order)
+    Down           move cursor down (in display order)
+    Shift+Up       move cursor to prev sibling
+    Shift+Down     move cursor to next sibling
+    Ctrl+Up        move cursor to parent
+    Ctrl+Shift+Up  move cursor to root
     
-    Click = select twig, and open or close branch
+    Click          select twig, and open or close branch
     
-    Right = open, or move cursor to next
-    Left = close, or move cursor to parent
-    Ctrl+Right = open descendants
-    Ctrl+Left = close descendants
-    Shift+Right = open children
-    Shift+Left = close children
-    Ctrl+Shift+Right = open children and descendants
-    Ctrl+Shift+Left = close children and descendants
-    Shift+Alt+Right = open grandchildren
-    Shift+Alt+Left = close grandchildren
-    Ctrl+Shift+Alt+Right = open grandchildren and descendants
-    Ctrl+Shift+Alt+Left = close grandchildren and descendants
+    Right                   open, or move cursor to next
+    Left                    close, or move cursor to parent
+    Ctrl+Right              open descendants
+    Ctrl+Left               close descendants
+    Shift+Right             open children
+    Shift+Left              close children
+    Ctrl+Shift+Right        open children and descendants
+    Ctrl+Shift+Left         close children and descendants
     
-    Alt+Up = add prev sibling
-    Alt+Down = add next sibling
-    Alt+Left = add object parent
-    Alt+Shift+Left = add array parent
-    Alt+Right = add first child
-    Shift+Alt+Up = switch selected with prev sibling
-    Shift+Alt+Down = switch selected with next sibling
-    Delete = delete selected
+    Alt+Up                  add prev sibling
+    Alt+Down                add next sibling
+    Alt+Left                add object parent
+    Alt+Shift+Left          add array parent
+    Alt+Right               add first child
+    Shift+Alt+Up            switch selected with prev sibling
+    Shift+Alt+Down          switch selected with next sibling
+    Delete                  delete selected
     
-    Shift+Scroll = scroll by 1 twig
-    Scroll = 10
-    Ctrl+Scroll = 100
-    Ctrl+Shift+Scroll = 1000
-    Ctrl+Shift+Alt+Scroll = 10000
+    Shift+Scroll            scroll by 1 twig
+    Scroll                  scroll by 10
+    Ctrl+Scroll             scroll by 100
+    Ctrl+Shift+Scroll       scroll by 1000
+    Ctrl+Shift+Alt+Scroll   scroll by 10000
     PageUp/PageDown is equivalent to Scroll
